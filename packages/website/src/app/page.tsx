@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
+import { WalletSelector } from "@/components/WalletSelector";
 import Link from "next/link";
 
 export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col items-center px-4 py-16 sm:px-6 lg:px-8">
+      {/* Add wallet button to the top */}
+      <div className="w-full max-w-7xl flex justify-end mb-8">
+        <WalletSelector />
+      </div>
+
       {/* Hero Section */}
       <div className="text-center max-w-4xl mx-auto">
         <h1 className="text-5xl font-bold tracking-tight sm:text-6xl mb-6">
