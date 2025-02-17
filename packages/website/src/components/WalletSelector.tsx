@@ -5,7 +5,6 @@ import {
   AboutAptosConnect,
   AboutAptosConnectEducationScreen,
   AnyAptosWallet,
-  AptosPrivacyPolicy,
   WalletItem,
   groupAndSortWallets,
   isAptosConnectWallet,
@@ -113,10 +112,7 @@ interface ConnectWalletDialogProps {
 function ConnectWalletDialog({ close }: ConnectWalletDialogProps) {
   const { wallets = [] } = useWallet();
 
-  const { aptosConnectWallets, availableWallets, installableWallets } =
-    groupAndSortWallets(wallets);
-
-  const hasAptosConnectWallets = !!aptosConnectWallets.length;
+  const { availableWallets, installableWallets } = groupAndSortWallets(wallets);
 
   return (
     <DialogContent className="max-h-screen overflow-auto">
