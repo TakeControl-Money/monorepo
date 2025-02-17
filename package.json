@@ -1,0 +1,7 @@
+{
+  "name": "takecontrol-money",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
