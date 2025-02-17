@@ -1,0 +1,17 @@
+[package]
+name = "takecontrol_money"
+version = "1.0.0"
+authors = []
+
+[addresses]
+takecontrol_money = "_"
+
+[dev-addresses]
+takecontrol_money = "0x123"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
